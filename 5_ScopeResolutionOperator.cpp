@@ -24,10 +24,10 @@ class Rectangle
 
 };
 
-//🔸 Parameterized Constructor body using scope resolution operator
-Rectangle:: Rectangle(int l, int b) {
-  length = l;
-  breadth = b;
+//🔸 Parameterized Constructor body, using scope resolution operator and "this pointer"
+Rectangle:: Rectangle(int length, int breadth) {
+  this-> length = length;
+  this-> breadth = breadth;
 }
 
 void Rectangle::setLength(int l) {
