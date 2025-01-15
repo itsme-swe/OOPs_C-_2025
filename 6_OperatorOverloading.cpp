@@ -1,37 +1,38 @@
-#include <iostream> 
+#include <iostream>
 
-using namespace std; 
+using namespace std;
 
-class Complex 
+class Complex
 {
 
 public:
-    int real;
-    int img;
+  int real;
+  int img;
 
-    Complex operator+(Complex c) {
+  Complex operator+(Complex c)
+  {
 
-      Complex temp;
-      temp.real = real + c.real;
-      temp.img = img + c.img;
-      return temp;
-    }
-
+    Complex temp;
+    temp.real = real + c.real;
+    temp.img = img + c.img;
+    return temp;
+  }
 };
 
-int main(){
+int main()
+{
 
   Complex c1, c2, c3;
 
-  c1.real = 5; 
+  c1.real = 5;
   c1.img = 3;
 
   c2.real = 10;
   c2.img = 5;
 
-  c3 = c2+c1;
+  c3 = c2 + c1;
 
-  cout << c3.real << "+i" <<c3.img << endl;
+  cout << c3.real << "+i" << c3.img << endl;
 
   return 0;
 }

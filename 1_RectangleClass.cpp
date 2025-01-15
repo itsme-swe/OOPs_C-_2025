@@ -1,21 +1,22 @@
-#include <iostream> 
+#include <iostream>
 
-using namespace std; 
+using namespace std;
 
-class Rectangle 
+class Rectangle
 {
-  public:
+public:
   int length;
 
   int breadth;
 
-  int area() {
+  int area()
+  {
     return length * breadth;
   }
-
 };
 
-int main(){
+int main()
+{
 
   Rectangle r1, r2;
 

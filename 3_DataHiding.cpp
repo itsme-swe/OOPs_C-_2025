@@ -1,58 +1,64 @@
-#include <iostream> 
+#include <iostream>
 
-using namespace std; 
+using namespace std;
 
-class Rectangle 
+class Rectangle
 {
 
-  private:
+private:
   int length;
   int breadth;
 
-  //🔸 Getter and Setter Methods to access private data members
-  public:
+  // 🔸 Getter and Setter Methods to access private data members
+public:
   // Mutators
-  void setLength(int l) {
+  void setLength(int l)
+  {
 
-    if (l >= 0) {
+    if (l >= 0)
+    {
       length = l;
     }
-    else {
+    else
+    {
       length = 0;
     }
+  }
 
-  } 
+  void setBreadth(int b)
+  {
 
-  void setBreadth(int b) {
-
-    if (b >= 0) {
+    if (b >= 0)
+    {
       breadth = b;
     }
-    else {
+    else
+    {
       breadth = 0;
     }
-
   }
 
   // Accessors
-  int getLength() {
+  int getLength()
+  {
     return length;
   }
 
-  int getBreadth() {
+  int getBreadth()
+  {
     return breadth;
   }
 
-  public:
-  int area() {
+public:
+  int area()
+  {
 
     return length * breadth;
-
   }
-
 };
 
-int main(){
+int main()
+{
 
   Rectangle r1;
   r1.setLength(10);

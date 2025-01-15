@@ -1,30 +1,29 @@
-#include <iostream> 
+#include <iostream>
 
-using namespace std; 
+using namespace std;
 
 class Rectangle
 {
-  public:
+public:
   int length;
   int breadth;
 
-  int area() {
-    
+  int area()
+  {
     return length * breadth;
-
   }
-
 };
 
-int main(){
+int main()
+{
 
   // This is how we create an object inside Heap memory using pointer
   Rectangle *ptr = new Rectangle();
 
-  ptr-> length = 10;
-  ptr-> breadth = 5;
+  ptr->length = 10;
+  ptr->breadth = 5;
 
-  cout << "Area of rectangle is " << ptr-> area(); 
+  cout << "Area of rectangle is " << ptr->area();
 
   return 0;
 }
