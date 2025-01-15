@@ -1,31 +1,31 @@
-#include <iostream> 
+#include <iostream>
 
-using namespace std; 
+using namespace std;
 
 class Base
 {
 
-  public:
-  void display() {
+public:
+  void display()
+  {
     cout << "Display of base " << endl;
   }
-
 };
 
 class Derived : public Base
 {
-  public:
-  void display() {
+public:
+  void display()
+  {
     cout << "Display of Derived Class";
   }
-
 };
 
-int main(){
+int main()
+{
 
-  Derived b; 
+  Derived b;
   b.display();
-  
 
   return 0;
 }
