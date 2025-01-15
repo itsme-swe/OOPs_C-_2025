@@ -1,7 +1,7 @@
 #ifndef CUBOID_HEADER
 #define CUBOID_HEADER
 
-#include "RectangleClass.cpp"
+#include "RectangleClass.h"
 
 class Cuboid : public Rectangle
 {

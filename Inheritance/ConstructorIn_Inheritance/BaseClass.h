@@ -12,15 +12,15 @@ class Base
 
   Base(int x);
 
-
 };
 
 Base:: Base() {
-  cout << "Non-Param Base" << endl;
+  cout << "Non-Param Base Class" << endl;
 }
 
 Base:: Base(int x) {
-  cout << "Param of Base " << x << endl;
+  cout << "Param of Base Class " << x << endl;
 }
+
 
 #endif

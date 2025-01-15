@@ -1,7 +1,7 @@
 #include <iostream> 
 
-#include "RectangleClass.cpp"
-#include "CuboidClass.cpp"
+#include "RectangleClass.h"
+#include "CuboidClass.h"
 
 using namespace std; 
 
